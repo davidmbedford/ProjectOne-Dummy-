@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project One</title>
+    <meta name="description" content="Project 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- use bideo to make a background and form with bootstrap -->
+    <div class="container">
+      <div class="row form-row">
+        <div class="col-12">
+          <form>
+            <div class="form-group">
+              <label for="date">Date: </label>
+              <input type="date" class="form-control" id="date" aria-describedby="eventNameSub">
+            </div>
+            <div class="form-group">
+              <label for="mianInput">Genre/Band Name: </label>
+              <input type="text" class="form-control" id="mainInput" placeholder="Ex. Grindcore // Ludwig Van Coldplay">
+            </div>
+            <div class="form-group">
+              <label for="userRange">Venue: </label>
+              <input type="text" class="form-control" id="venue" placeholder="Ex. Market Hotel">
+            </div>
+            <div class="form-group">
+              <label for="eventName">City/State: </label>
+              <input type="text" class="form-control" id="cityState" aria-describedby="eventNameSub" placeholder="Ex. Philadelphia">
+            </div>
+            <button type="submit" class="btn btn-dark" id="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-lg-12" id="tableZone">
+
+          <!--this is the target zone for where we want to dynamically create cards-->
+
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
