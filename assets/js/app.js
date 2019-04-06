@@ -22,6 +22,7 @@ function retrieveForm(event) {
 $('#submit-btn').on('click', retrieveForm);
 
 function createTable() {
+  $("#tableZone").empty();
  //tier 3
   var newCard = $("<div class='card'>");
   $("#tableZone").append(newCard);
@@ -48,7 +49,7 @@ function createTable() {
   $("<td>").text("Buttons")
     );
  //tier 6
-  tableHead.append(topRow);
+  $("<thead>").append(topRow);
  //tier 5
   table.append(tableHead);
  //tier 6
